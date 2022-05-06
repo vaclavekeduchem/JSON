@@ -3,15 +3,20 @@ import json
 from prettytable import PrettyTable
 from prettytable.colortable import ColorTable, Themes
 
-def load_json_file(filename):
-    f = open(filename, "r", encoding="utf-8")
-    data = json.load(f)
-    f.close()
+
+def vypis_napovedu():
+    print(f"1) Vypis žáku\t 2) Přidat žáka")
+
+
+def nacist_json(soubor: str):
+    s = open(soubor, "r", encoding="utf-8")
+    data = json.load(s)
+    s.close()
     return data
 
 
-if __name__ == "__main__":
-    zaci = load_json_file("zaci.json")
+def vypis_tabulku():
+    zaci = nacist_json("zaci.json")
 
     tabulka = ColorTable(theme=Themes.OCEAN)
     tabulka.field_names = ["Jméno", "Příjmení", "Třída"]
@@ -20,3 +25,7 @@ if __name__ == "__main__":
         tabulka.add_row([zak["jmeno"], zak["prijmeni"], zak["trida"]])
 
     print(tabulka.get_string())
+
+
+if __name__ == "__main__":
+    vypis_tabulku()
