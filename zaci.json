@@ -1,88 +1,88 @@
 {
     "zaci": [
-    {
-        "id": 1,
-        "jmeno": "David",
-        "prijmeni": "Chlad",
-        "trida": "IT1A"
-    },
-    {
-        "id": 2,
-        "jmeno": "Adam",
-        "prijmeni": "Gyra",
-        "trida": "IT3"
-    },
-    {
-        "id": 3,
-        "jmeno": "Vojtěch",
-        "prijmeni": "Šebek",
-        "trida": "IT4"
-    },
-    {
-        "id": 4,
-        "jmeno": "Matyáš",
-        "prijmeni": "Schuller",
-        "trida": "I1B"
-    },
-    {
-        "id": 5,
-        "jmeno": "Marek",
-        "prijmeni": "Vítr",
-        "trida": "IT1B"
-    },
-    {
-        "id": 6,
-        "jmeno": "Daniel",
-        "prijmeni": "Duda",
-        "trida": "IT2A"
-    },
-    {
-        "id": 7,
-        "jmeno": "David",
-        "prijmeni": "Žitný",
-        "trida": "IT2A"
-    },
-    {
-        "id": 8,
-        "jmeno": "Mojmír",
-        "prijmeni": "Bombera",
-        "trida": "IT1B"
-    },
-    {
-        "id": 9,
-        "jmeno": "Mojmír",
-        "prijmeni": "Bombera",
-        "trida": "IT1B"
-    },
-    {
-        "id": 10,
-        "jmeno": "Mojmír",
-        "prijmeni": "Bombera",
-        "trida": "IT1B"
-    },
-    {
-        "id": 11,
-        "jmeno": "Jan",
-        "prijmeni": "Bláha",
-        "trida": "IT1B"
-    },
-    {
-        "id": 12,
-        "jmeno": "Vítek",
-        "prijmeni": "Lacko",
-        "trida": "IT2A"
-    },
-    {
-        "id": 13,
-        "jmeno": "sdjfsdif)",
-        "prijmeni": "eere",
-        "trida": "erewr"
-    },
-    {
-        "id": 14,
-        "jmeno": "Tvoje",
-        "prijmeni": "Mama",
-        "trida": "IT4"
-    }
-]
+        {
+            "id": 1,
+            "jmeno": "David",
+            "prijmeni": "Chlad",
+            "trida": "IT1A"
+        },
+        {
+            "id": 2,
+            "jmeno": "Adam",
+            "prijmeni": "Gyra",
+            "trida": "IT3"
+        },
+        {
+            "id": 3,
+            "jmeno": "Vojtěch",
+            "prijmeni": "Šebek",
+            "trida": "IT4"
+        },
+        {
+            "id": 4,
+            "jmeno": "Matyáš",
+            "prijmeni": "Schuller",
+            "trida": "I1B"
+        },
+        {
+            "id": 5,
+            "jmeno": "Marek",
+            "prijmeni": "Vítr",
+            "trida": "IT1B"
+        },
+        {
+            "id": 6,
+            "jmeno": "Daniel",
+            "prijmeni": "Duda",
+            "trida": "IT2A"
+        },
+        {
+            "id": 7,
+            "jmeno": "David",
+            "prijmeni": "Žitný",
+            "trida": "IT2A"
+        },
+        {
+            "id": 8,
+            "jmeno": "Mojmír",
+            "prijmeni": "Bombera",
+            "trida": "IT1B"
+        },
+        {
+            "id": 9,
+            "jmeno": "Mojmír",
+            "prijmeni": "Bombera",
+            "trida": "IT1B"
+        },
+        {
+            "id": 10,
+            "jmeno": "Mojmír",
+            "prijmeni": "Bombera",
+            "trida": "IT1B"
+        },
+        {
+            "id": 11,
+            "jmeno": "Jan",
+            "prijmeni": "Bláha",
+            "trida": "IT1B"
+        },
+        {
+            "id": 12,
+            "jmeno": "Vítek",
+            "prijmeni": "Lacko",
+            "trida": "IT2A"
+        },
+        {
+            "id": 13,
+            "jmeno": "sdjfsdif)",
+            "prijmeni": "eere",
+            "trida": "erewr"
+        },
+        {
+            "id": 14,
+            "jmeno": "Tvoje",
+            "prijmeni": "Mama",
+            "trida": "IT4"
+        }
+    ]
 }

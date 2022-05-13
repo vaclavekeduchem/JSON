@@ -28,7 +28,7 @@ def vypis_tabulku(zaci: list):
 def upravit_json(hodnoty: dict, zaci: list, soubor: str):
     zaci.append(hodnoty)
     s = open(soubor, "w", encoding="utf-8")
-    json.dump(zaci, s, ensure_ascii=False, indent=4)
+    json.dump({"zaci": zaci}, s, ensure_ascii=False, indent=4)
     s.close()
 
 
