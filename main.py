@@ -40,6 +40,11 @@ def vypis_zaka(zaci: list, id: int):
     print("============")
 
 
+def posledni_id(zaci: list):
+    zaci_sorted = sorted(zaci, key=lambda i: i["id"])
+    return zaci_sorted[len(zaci_sorted) -1]["id"]
+
+
 if __name__ == "__main__":
     zaci = nacist_json("zaci.json")
     while True:
@@ -49,8 +54,7 @@ if __name__ == "__main__":
                 case 1:
                     vypis_tabulku(zaci["zaci"])
                 case 2:
-                    upravit_json(
-                        {"jmeno": input("Jméno: "), "prijmeni": input("Příjmení: "), "trida": input("Třída: ")},
+                    upravit_json({"id": posledni_id(zaci["zaci"])+1, "jmeno": input("Jméno: "), "prijmeni": input("Příjmení: "), "trida": input("Třída: ")},
                         zaci["zaci"], "zaci.json")
                 case 3:
                     vypis_zaka(zaci["zaci"], int(input("Zadej ID žáka: ")))
