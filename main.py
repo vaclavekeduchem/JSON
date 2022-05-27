@@ -5,7 +5,7 @@ from prettytable.colortable import ColorTable, Themes
 
 
 def vypis_napovedu():
-    print("1) Vypiš žáky\t 2) Přidat žáka\t 3) Vypiš žáka\t 4) Ukončit program")
+    print("1) Vypiš žáky\t 2) Přidat žáka\t 3) Vypiš žáka\t 4) Smaž žáka 5) Ukončit program")
 
 
 def nacist_json(soubor: str):
@@ -42,23 +42,31 @@ def vypis_zaka(zaci: list, id: int):
 
 def posledni_id(zaci: list):
     zaci_sorted = sorted(zaci, key=lambda i: i["id"])
-    return zaci_sorted[len(zaci_sorted) -1]["id"]
+    return zaci_sorted[len(zaci_sorted) - 1]["id"]
+
+
+def smaz_zaka(zaci: list, id: int):
+    zak = zaci[id - 1]
+    print(zak)
+    new_zaci = zaci.pop(id)
+    print(new_zaci)
 
 
 if __name__ == "__main__":
     zaci = nacist_json("zaci.json")
     while True:
         vypis_napovedu()
-        try:
-            match int(input("Vyberte jednu z možností: ")):
-                case 1:
-                    vypis_tabulku(zaci["zaci"])
-                case 2:
-                    upravit_json({"id": posledni_id(zaci["zaci"])+1, "jmeno": input("Jméno: "), "prijmeni": input("Příjmení: "), "trida": input("Třída: ")},
-                        zaci["zaci"], "zaci.json")
-                case 3:
-                    vypis_zaka(zaci["zaci"], int(input("Zadej ID žáka: ")))
-                case 4:
-                    exit()
-        except ValueError:
-            print("Musíš zadat pouze čísla")
+
+        match int(input("Vyberte jednu z možností: ")):
+            case 1:
+                vypis_tabulku(zaci["zaci"])
+            case 2:
+                upravit_json({"id": posledni_id(zaci["zaci"]) + 1, "jmeno": input("Jméno: "),
+                              "prijmeni": input("Příjmení: "), "trida": input("Třída: ")},
+                             zaci["zaci"], "zaci.json")
+            case 3:
+                vypis_zaka(zaci["zaci"], int(input("Zadej ID žáka: ")))
+            case 4:
+                smaz_zaka(zaci["zaci"], int(input("Zadej ID:")))
+            case 5:
+                exit()
